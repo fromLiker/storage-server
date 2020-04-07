@@ -1,10 +1,10 @@
 eureka:
+    instance:
+        hostname: 106.54.194.33
+        prefer-ip-address: true
     client:
         serviceUrl:
             defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-    instance:
-        hostname: localhost
-        prefer-ip-address: true
 logging:
     level:
         io:
