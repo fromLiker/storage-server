@@ -1,0 +1,35 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+    instance:
+        hostname: localhost
+        prefer-ip-address: true
+logging:
+    level:
+        io:
+            seata: info
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
+    typeAliasesPackage: io.seata.sample.entity
+server:
+    port: 8182
+spring:
+    application:
+        name: storage-server
+    cloud:
+        alibaba:
+            seata:
+                tx-service-group: fsp_tx_group
+#    datasource:
+##        driver-class-name: com.mysql.jdbc.Driver
+##        url: jdbc:mysql://116.62.62.26/seat-storage
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        url: jdbc:mysql://106.54.194.33:3309/storage
+#        username: root
+#        password: admin
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://106.54.194.33:3309/storage?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: admin
