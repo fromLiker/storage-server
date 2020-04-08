@@ -24,8 +24,8 @@ public class StorageController {
      * @return
      */
     @RequestMapping("decrease")
-    public String decrease(@RequestParam("productId") Long productId,@RequestParam("count") Integer count){
-        storageServiceImpl.decrease(productId,count);
+    public String decrease(@RequestParam("productid") Integer productid,@RequestParam("countnum") Integer countnum){
+        storageServiceImpl.decrease(productid, countnum);
         return "Decrease storage success";
     }
 }

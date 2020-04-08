@@ -24,9 +24,9 @@ public class StorageServiceImpl implements StorageService {
      * @return
      */
     @Override
-    public void decrease(Long productId, Integer count) {
+    public void decrease(Integer productid, Integer countnum) {
         LOGGER.info("------->扣减库存开始");
-        storageDao.decrease(productId,count);
+        storageDao.decrease(productid, countnum);
         LOGGER.info("------->扣减库存结束");
     }
 }
