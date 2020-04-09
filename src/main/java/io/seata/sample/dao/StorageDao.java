@@ -15,5 +15,5 @@ public interface StorageDao {
      * @param count 数量
      * @return
      */
-    void decrease(@Param("productid") Integer productid, @Param("countnum") Integer countnum);
+    void decrease(@Param("productId") Long productId, @Param("count") Integer count);
 }
