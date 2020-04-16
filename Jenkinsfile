@@ -20,7 +20,7 @@ pipeline {
       agent any
       steps {
           sh 'docker image build -t ${DOCKERHUBNAME}/tstorage .'
-          sh 'docker run -d -p 8182:8182 ${DOCKERHUBNAME}/tstorage'
+          sh 'docker run -d -p 8182:8182 --name seatastorage ${DOCKERHUBNAME}/tstorage'
       }
     }
 
