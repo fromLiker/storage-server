@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
- * 库存服务
- * @author 
+ * a库存服务
+ * @author Liker
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @MapperScan("io.seata.sample.dao")

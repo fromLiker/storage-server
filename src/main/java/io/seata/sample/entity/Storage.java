@@ -3,22 +3,22 @@ package io.seata.sample.entity;
 import lombok.Data;
 
 /**
- * @author IT云清
+ * @author Liker
  */
 @Data
 public class Storage {
 
-    private Long id;
+    private Integer id;
 
-    /**产品id*/
-    private Long productId;
+    /**a产品id*/
+    private Integer productid;
 
-    /**总库存*/
+    /**a总库存*/
     private Integer total;
 
-    /**已用库存*/
+    /**a已用库存*/
     private Integer used;
 
-    /**剩余库存*/
+    /**a剩余库存*/
     private Integer residue;
 }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author IT云清
+ * @author Liker
  */
 @RestController
 @RequestMapping("storage")
@@ -18,14 +18,14 @@ public class StorageController {
     private StorageService storageServiceImpl;
 
     /**
-     * 扣减库存
+     * a扣减库存
      * @param productId 产品id
      * @param count 数量
      * @return
      */
     @RequestMapping("decrease")
-    public String decrease(@RequestParam("productId") Long productId,@RequestParam("count") Integer count){
-        storageServiceImpl.decrease(productId,count);
+    public String decrease(@RequestParam("productid") Integer productid,@RequestParam("countnum") Integer countnum){
+        storageServiceImpl.decrease(productid, countnum);
         return "Decrease storage success";
     }
 }

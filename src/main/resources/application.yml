@@ -22,7 +22,7 @@ spring:
             seata:
                 tx-service-group: fsp_tx_group
     datasource:
-        driver-class-name: com.mysql.jdbc.Driver
-        password: admin
-        url: jdbc:mysql://106.54.194.33:3307/torder
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://106.54.194.33/mystdb?serverTimezone=GMT%2B8&useSSL=false
         username: root
+        password: admin

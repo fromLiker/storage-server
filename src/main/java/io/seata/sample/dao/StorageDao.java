@@ -4,16 +4,16 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author IT云清
+ * @author Liker
  */
 @Repository
 public interface StorageDao {
 
     /**
-     * 扣减库存
-     * @param productId 产品id
-     * @param count 数量
+     * a扣减库存
+     * @param productid 产品id
+     * @param countnum 数量
      * @return
      */
-    void decrease(@Param("productId") Long productId, @Param("count") Integer count);
+    void decrease(@Param("productid") Integer productid, @Param("countnum") Integer countnum);
 }

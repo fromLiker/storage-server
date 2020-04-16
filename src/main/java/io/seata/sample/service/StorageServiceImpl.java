@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @author IT云清
+ * @author Liker
  */
 @Service("storageServiceImpl")
 public class StorageServiceImpl implements StorageService {
@@ -18,15 +18,15 @@ public class StorageServiceImpl implements StorageService {
     private StorageDao storageDao;
 
     /**
-     * 扣减库存
-     * @param productId 产品id
-     * @param count 数量
+     * a扣减库存
+     * @param productid 产品id
+     * @param countnum 数量
      * @return
      */
     @Override
-    public void decrease(Long productId, Integer count) {
+    public void decrease(Integer productid, Integer countnum) {
         LOGGER.info("------->扣减库存开始");
-        storageDao.decrease(productId,count);
+        storageDao.decrease(productid, countnum);
         LOGGER.info("------->扣减库存结束");
     }
 }

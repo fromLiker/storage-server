@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
- * 数据源代理
- * @author wangzhongxiang
+ * a数据源代理
+ * @author Liker
  */
 @Configuration
 public class DataSourceConfiguration {
